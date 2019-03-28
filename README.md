@@ -1,3 +1,5 @@
+This fork is open for issues and help is welcome, for moment, only update dependencies (markdown-it & plugins)
+
 # vue-markdown
 
 [![npm](https://img.shields.io/npm/v/vue-markdown.svg?style=flat)](https://www.npmjs.com/package/vue-markdown)

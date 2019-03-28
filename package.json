@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Akirami/vue-markdown-V2.git"https://github.com/miaolz123/vue-markdown.git
+    "url": "git+https://github.com/Akirami/vue-markdown-V2.git"
   },
   "keywords": [
     "vue",

@@ -64,13 +64,13 @@ Supported Markdown Syntax:
 ### NPM
 
 ```shell
-$ npm install --save vue-markdown
+$ npm install --save vue-markdown-v2
 ```
 
-### Yarn
+or Yarn
 
 ```shell
-$ yarn add vue-markdown --save
+$ yarn add vue-markdown-v2 --save
 ```
 
 ## CommonJS

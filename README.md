@@ -144,8 +144,8 @@ TIP: The default slot only renders **once** at the beginning, and it will overwr
 | breaks | Boolean | `true` | `\n` => `<br>` |
 | linkify | Boolean | `true` | autoconvert URL-like text to link |
 | emoji | Boolean | `true` | `:)` => `😃` |
-| markdownItIcons | Boolean | add Font Awesome icon
-| sourceMap | Boolean | add line number in html data attribute
+| markdownItIcons | Boolean |  `true`| add Font Awesome icon
+| sourceMap | Boolean | `true`| add line number in html data attribute
 | typographer | Boolean | `true` | enable some language-neutral replacement and quotes beautification |
 | lang-prefix | String | `language-` | CSS language prefix for fenced blocks |
 | quotes | String | `“”‘’` | use `“”‘’` for Chinese, `„“‚‘` for German, `«»„“` for Russian |

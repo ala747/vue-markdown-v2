@@ -1,5 +1,6 @@
 import markdownIt from 'markdown-it'
 import emoji from 'markdown-it-emoji'
+import markdownItIcons from 'markdown-it-icons'
 import subscript from 'markdown-it-sub'
 import superscript from 'markdown-it-sup'
 import footnote from 'markdown-it-footnote'
@@ -11,6 +12,7 @@ import toc from 'markdown-it-toc-and-anchor'
 import katex from '@iktakahiro/markdown-it-katex'
 import container from 'markdown-it-container'
 import tasklists from 'markdown-it-task-lists'
+import markdownItSourceMap from 'markdown-it-source-map'
 
 export default {
   md: new markdownIt(),
@@ -35,6 +37,10 @@ export default {
     source: {
       type: String,
       default: ``,
+    },
+    sourceMap: {
+      type: Boolean,
+      default: true
     },
     show: {
       type: Boolean,
@@ -63,6 +69,10 @@ export default {
     emoji: {
       type: Boolean,
       default: true,
+    },
+    markdownItIcons: {
+      type: Boolean,
+      default: true
     },
     typographer: {
       type: Boolean,
@@ -162,8 +172,14 @@ export default {
       .use(katex, { "throwOnError": false, "errorColor": " #cc0000" })
       .use(tasklists, { enabled: this.taskLists })
 
+    if (this.markdownItIcons) {
+      this.md.use(markdownItIcons, 'font-awesome')
+    }
     if (this.emoji) {
       this.md.use(emoji)
+    }
+    if (this.sourceMap) {
+      this.md.use(markdownItSourceMap)
     }
 
     this.md.set({

@@ -2,7 +2,7 @@ This fork is open for issues and help is welcome, for moment, only update depend
 
 Added :
 - markdown-it-container
-- Corrected the source for mardown)it-katex
+- Corrected the source for mardown-it-katex
 
 # vue-markdown
 

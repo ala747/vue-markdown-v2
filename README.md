@@ -2,6 +2,7 @@ This fork is open for issues and help is welcome, for now:
 
 Added :
 - markdown-it-container
+- markdown-it-source-map
 - markdown-it-icons
 - Corrected the source for mardown-it-katex
 - update dependencies to work with Babel V7
@@ -9,11 +10,9 @@ Added :
 DO NOT USE THE DIST FOLDER, instead import or require VueMarkdown from 'vue-markdown-v2/src/VueMarkdown'
 
 TODO:
-
 - create dist folder correctly (help needed)
 
 Next plugin to add:
-- markdown-it-source-map
 - markdown-it-plugin-echarts
 - markdown-it-plugin-mermaid
 - markdown-it-plugin-flowchart

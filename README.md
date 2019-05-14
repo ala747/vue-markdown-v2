@@ -33,6 +33,7 @@ Quick start: `<vue-markdown>i am a ~~tast~~ **test**.</vue-markdown>`
 
 Supported Markdown Syntax:
 
+* [x] Source map in html (data-source-line="")
 * [x] automatic table of contents
 * [x] table & class customize
 * [x] *SyntaxHighlighter

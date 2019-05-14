@@ -9,6 +9,7 @@ import insert from 'markdown-it-ins'
 import mark from 'markdown-it-mark'
 import toc from 'markdown-it-toc-and-anchor'
 import katex from '@iktakahiro/markdown-it-katex'
+import container from 'markdown-it-container'
 import tasklists from 'markdown-it-task-lists'
 
 export default {
@@ -26,6 +27,10 @@ export default {
     watches: {
       type: Array,
       default: () => ['source', 'show', 'toc'],
+    },
+    container: {
+      type: String,
+      default: 'warning info danger success'
     },
     source: {
       type: String,
@@ -139,6 +144,14 @@ export default {
 
   render(createElement) {
     this.md = new markdownIt()
+      .use(container, 'warning')
+      .use(container, 'info')
+      .use(container, 'danger')
+      .use(container, 'success')
+      .use(container, 'justified')
+      .use(container, 'centered')
+      .use(container, 'to-left')
+      .use(container, 'to-right')
       .use(subscript)
       .use(superscript)
       .use(footnote)

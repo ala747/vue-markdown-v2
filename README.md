@@ -5,6 +5,8 @@ Added :
 - Corrected the source for mardown-it-katex
 - update dependencies to work with Babel V7
 
+DO NOT USE THE DIST FOLDER, instead import or require VueMarkdown from 'vue-markdown-v2/src/VueMarkdown'
+
 # vue-markdown
 
 [![npm](https://img.shields.io/npm/v/vue-markdown.svg?style=flat)](https://www.npmjs.com/package/vue-markdown)

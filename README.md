@@ -1,8 +1,9 @@
-This fork is open for issues and help is welcome, for moment, only update dependencies to work with Babel V7
+This fork is open for issues and help is welcome, for now:
 
 Added :
 - markdown-it-container
 - Corrected the source for mardown-it-katex
+- update dependencies to work with Babel V7
 
 # vue-markdown
 

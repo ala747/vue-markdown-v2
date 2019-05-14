@@ -17,6 +17,7 @@ Supported Markdown Syntax:
 * [x] automatic table of contents
 * [x] table & class customize
 * [x] *SyntaxHighlighter
+* [x] custom container
 * [x] definition list
 * [x] strikethrough
 * [x] GFM task list
@@ -148,6 +149,30 @@ TIP: The default slot only renders **once** at the beginning, and it will overwr
 | ---- | --------- | -------- |
 | rendered | outHtml[String] | dispatch when render finish |
 | toc-rendered | tocHtml[String] | dispatch when TOC render finish, never dispatch if the toc[prop] is `false` |
+
+# Container
+Example:
+```
+::: danger
+*here be dragons*
+:::
+```
+Will give:
+```html
+<div class="danger">
+<p><em>here be dragons</em></p>
+</div>
+```
+
+Possible containers:
+- warning
+- info
+- danger
+- success
+- to-left
+- to-right
+- centered
+- justify
 
 # Thanks
 

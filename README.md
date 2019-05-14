@@ -82,7 +82,7 @@ $ yarn add vue-markdown-v2 --save
 ## CommonJS
 
 ```js
-var VueMarkdown = require('vue-markdown');
+var VueMarkdown = require('vue-markdown-v2/src/VueMarkdown');
 
 new Vue({
   components: {
@@ -96,7 +96,7 @@ new Vue({
 After installing via Yarn or NPM, use the following snippet in the script portion of the Vue component which you wish to render the Markdown.
 
 ```js
-import VueMarkdown from 'vue-markdown'
+import VueMarkdown from 'vue-markdown-v2/src/VueMarkdown'
 
 new Vue({
   components: {

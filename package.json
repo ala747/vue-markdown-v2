@@ -39,7 +39,7 @@
     "markdown-it-source-map": "^0.1",
     "markdown-it-footnote": "^3.0.1",
     "markdown-it-ins": "^2.0.0",
-    "markdown-it-katex": "https://github.com/iktakahiro/markdown-it-katex",
+    "@iktakahiro/markdown-it-katex": "git+https://github.com/iktakahiro/markdown-it-katex.git",
     "markdown-it-mark": "^2.0.0",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",

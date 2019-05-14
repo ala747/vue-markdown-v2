@@ -2,6 +2,7 @@ This fork is open for issues and help is welcome, for now:
 
 Added :
 - markdown-it-container
+- markdown-it-icons
 - Corrected the source for mardown-it-katex
 - update dependencies to work with Babel V7
 
@@ -13,7 +14,6 @@ TODO:
 
 Next plugin to add:
 - markdown-it-source-map
-- markdown-it-icons
 - markdown-it-plugin-echarts
 - markdown-it-plugin-mermaid
 - markdown-it-plugin-flowchart

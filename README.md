@@ -7,6 +7,19 @@ Added :
 
 DO NOT USE THE DIST FOLDER, instead import or require VueMarkdown from 'vue-markdown-v2/src/VueMarkdown'
 
+TODO:
+
+- create dist folder correctly (help needed)
+
+Next plugin to add:
+- markdown-it-source-map
+- markdown-it-icons
+- markdown-it-plugin-echarts
+- markdown-it-plugin-mermaid
+- markdown-it-plugin-flowchart
+
+
+
 # vue-markdown
 
 [![npm](https://img.shields.io/npm/v/vue-markdown.svg?style=flat)](https://www.npmjs.com/package/vue-markdown)

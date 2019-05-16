@@ -47,6 +47,7 @@ Supported Markdown Syntax:
 * [x] insert
 * [x] *katex
 * [x] emoji
+* [x] icon
 * [x] mark
 
 `*SyntaxHighlighter` work with [Prism](https://prismjs.com) recommend

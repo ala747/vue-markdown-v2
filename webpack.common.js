@@ -1,36 +1,38 @@
 var webpack = require("webpack");
 var version = require("./package.json").version;
+var path = require('path');
 var banner =
   "/**\n" +
-  " * vue-markdown v" + version + "\n" +
-  " * https://github.com/miaolz123/vue-markdown\n" +
+  " * vue-markdown v2" +
+  " * https://github.com/Akirami/vue-markdown-v2\n" +
   " * MIT License\n" +
   " */\n";
 
 module.exports = {
+  mode: 'production',
   entry: "./src/VueMarkdown.js",
   target: "node",
   output: {
-    path: "./dist",
+    path: path.join(__dirname,"./dist"),
     filename: "vue-markdown.common.js",
     library: "VueMarkdown",
     libraryTarget: "umd"
   },
   externals: /^[^.]/,
   plugins: [
-    new webpack.BannerPlugin(banner, { raw: true })
+    new webpack.BannerPlugin(banner)
   ],
   module: {
-    loaders: [{
+    rules: [{
       test: /\.vue$/,
-      loader: "vue"
+      loader: "vue-loader"
     }, {
         test: /\.js$/,
-        loader: "babel",
+        loader: "babel-loader",
         exclude: /node_modules/
       }, {
         test: /\.css$/,
-        loader: "style!css"
+        loader: ['vue-style-loader', 'css-loader']
       }, {
         test: /\.json$/,
         loader: "json-loader"

@@ -6,11 +6,10 @@ Added :
 - markdown-it-icons
 - Corrected the source for mardown-it-katex
 - update dependencies to work with Babel V7
-
-DO NOT USE THE DIST FOLDER, instead import or require VueMarkdown from 'vue-markdown-v2/src/VueMarkdown'
+- created a dist folder using Webpack 4 and Babel 7
 
 TODO:
-- create dist folder correctly (help needed)
+- It need loader for emoji (markdown-it-emoji)
 
 Next plugin to add:
 - markdown-it-plugin-echarts
@@ -97,7 +96,7 @@ $ yarn add vue-markdown-v2 --save
 ## CommonJS
 
 ```js
-var VueMarkdown = require('vue-markdown-v2/src/VueMarkdown');
+var VueMarkdown = require('vue-markdown-v2);
 
 new Vue({
   components: {
@@ -111,7 +110,7 @@ new Vue({
 After installing via Yarn or NPM, use the following snippet in the script portion of the Vue component which you wish to render the Markdown.
 
 ```js
-import VueMarkdown from 'vue-markdown-v2/src/VueMarkdown'
+import VueMarkdown from 'vue-markdown-v2'
 
 new Vue({
   components: {

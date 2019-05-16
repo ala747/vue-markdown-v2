@@ -1,4 +1,4 @@
-This fork is open for issues and help is welcome, for now:
+This fork is intended to work with Webpack 4 and Babel 7, it's open for issues and help is welcome, for now:
 
 Added :
 - markdown-it-container

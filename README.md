@@ -162,6 +162,7 @@ TIP: The default slot only renders **once** at the beginning, and it will overwr
 | toc-anchor-link-space | Boolean | `true` | enable inserting a space between the anchor link and heading |
 | toc-anchor-link-class | String | `toc-anchor-link` | customize the anchor link symbol class name |
 | anchorAttributes | Object | `{}` | anchor tag attributes such as `target: '_blank'` or `rel: 'nofollow'` |
+| tag | String | `div` | Output wrap tag, example `<div>...markdown content...</div>` or `<article>...markdown content...</article>` |
 | prerender | Function (String) String | `null` | filter function before markdown parse |
 | postrender | Function (String) String | `null` | filter function after markdown parse |
 

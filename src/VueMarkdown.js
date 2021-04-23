@@ -136,6 +136,10 @@ export default {
       type: Object,
       default: () => ({})
     },
+    tag: {
+      type: String,
+      default: 'div'
+    },
     prerender: {
       type: Function,
       default: (sourceData) => { return sourceData }
@@ -239,7 +243,7 @@ export default {
 
     this.$emit('rendered', outHtml)
     return createElement(
-      'div', {
+      this.tag, {
         domProps: {
           innerHTML: outHtml,
         },

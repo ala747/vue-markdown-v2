@@ -2,11 +2,10 @@ var webpack = require('webpack');
 var version = require("./package.json").version;
 var path = require('path');
 var banner =
-  "/**\n" +
-  " * vue-markdown v2" +
-  " * https://github.com/Akirami/vue-markdown-v2\n" +
-  " * MIT License\n" +
-  " */\n";
+  "vue-markdown v2\n" +
+  "https://github.com/Akirami/vue-markdown-v2\n" +
+  "MIT License";
+
 
 module.exports = {
   mode: 'development',
@@ -25,12 +24,15 @@ module.exports = {
       test: /\.vue$/,
       loader: "vue-loader"
     }, {
-        test: /\.js$/,
-        loader: "babel-loader",
-        exclude: /node_modules/
+      test: /\.js$/,
+      loader: "babel-loader",
+      exclude: /node_modules/
+    }, {
+        test: /\.css$/,
+        loader: 'css-loader'
       }, {
         test: /\.css$/,
-        loader: ['vue-style-loader', 'css-loader']
+        loader: 'vue-style-loader'
       }]
   },
 }

@@ -1,0 +1,4 @@
+/*!
+ * vue-markdown v2https://github.com/Akirami/vue-markdown-v2
+ * MIT License
+ */
